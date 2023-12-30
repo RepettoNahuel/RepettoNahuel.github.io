@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+}
+
+body{    
+    height: 100vh;
+    text-align: center;
+    background: url(imagenes/fondo.jpg) center/cover;
+}
+
+h1{
+    width: 100%;
+    font-size: 3.5rem;
+    margin: 20px auto 10px auto;
+}
+
+h2{
+    width: 100%;
+    font-size: 2rem;
+    margin: 0px auto 30px auto;
+}
+
+#contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;    
+    width: 90%;       
+}
+
+ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style: none; 
+  }
+
+.receta{
+    font-size: 0rem;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 24vw;
+    max-width: 300px;
+    min-width: 200px;
+    height: 30vh;   
+    min-height: 200px; 
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;   
+    border-radius: 10px;
+    box-shadow: 0px 10px 2px -1px rgba(128,121,128,1), inset 0px 0px 20px 2px rgb(137, 43, 226);      
+    transition: font-size 1s, transform 1s, box-shadow 1s;  
+    text-shadow: 1px 1px 2px rgb(137, 43, 226);  
+}
+
+.receta:hover{  
+    box-shadow: 0px 0px 0px 0px rgba(128,121,128,1), inset 0px 0px 20px 2px rgb(137, 43, 226);      
+    transform: scale(1.15);
+    font-size: 1.8rem;
+}
+
+.receta-nombre{    
+    margin-top: 15px;    
+    width: 100%;
+}
+
+.receta-ingredientes{    
+    font-size: 0px;
+    transition: font-size 1s;
+}
