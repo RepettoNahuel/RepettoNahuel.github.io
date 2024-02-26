@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;    
+    color: black;
+    font-family: 'Dancing Script', cursive; 
+}
+
+body{    
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    background: radial-gradient(rgb(181, 214, 253), rgb(32, 133, 248));    
+}
+
+h1{
+    font-size: 3rem;
+}
+
+.contenedor-tareas{
+    display: block;   
+    /*display: none;*/  
+    min-width: 300px; 
+    max-width: 500px;
+    width: 50%;  
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 100vh;
+    /*border: solid 4px black;*/
+}
+
+.tarea{
+    width: 90%;
+    margin-top: 15px;
+    font-size: 1.5rem; 
+    border-radius: 10px;    
+    border: solid 1px grey;;        
+    outline: none;  
+    text-indent: 10px;      
+}
+
+#lista-de-tareas{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /*border: solid 1px black;*/  
+}
+
+.nuevaTarea{
+    width: 85%;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;       
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    color: black;  
+    border-radius: 10px;    
+    border: solid 1px grey;
+    background-color: rgb(10, 118, 241);        
+    /*text-indent: 10px;*/
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.textTarea{
+    overflow: hidden;
+    word-wrap: break-word;  
+    margin-right: auto;  
+    padding-left: 10px; 
+}
+
+#crear{
+    width: 30%;
+    font-size: 1.5rem;    
+    margin-top: 15px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    font-weight: bold;
+    background-color: rgb(10, 118, 241);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+#crear:hover{
+    background-color: rgb(6, 79, 161);
+    cursor: pointer;
+}
+
+.eliminar{
+    width: 15%;
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    text-align: center; 
+    border: none;
+    border-radius: 10px;            
+}
+
+.completar{
+    width: 15%;
+    font-size: 1.5rem;    
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    text-align: center; 
+    border: none; 
+    border-radius: 10px;    
+    margin-left: auto;        
+}
+
+.eliminar:hover{    
+    background-color: rgba(252, 0, 0, 0.877);                
+}
+
+.completar:hover{
+    background-color: rgba(0, 252, 34, 0.877);         
+}
+
+.tareaCompletada{
+    width: 85%;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;       
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    color: black;  
+    border-radius: 10px;    
+    border: solid 1px grey;
+    background-color: rgb(0, 0, 0);       
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;    
+}
+
+.textTareaCompletada{
+    padding-left: 10px;
+    overflow: hidden;
+    word-wrap: break-word;  
+    margin-right: auto;  
+    color: white; 
+    text-decoration: line-through;
+}
+
+
+
