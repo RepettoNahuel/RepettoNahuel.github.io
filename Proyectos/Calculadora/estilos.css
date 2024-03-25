@@ -1,0 +1,87 @@
+* {
+    font-family: 'Teko', sans-serif;
+    color: #e0dfdf;
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(rgb(116, 114, 114), rgb(0, 0, 0));    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 100px); /*4 columnas de 100px*/
+    grid-template-rows: 160px repeat(5, 75px); /*6 filas, la primera de 160px y las demas de 75px*/
+    background-color: rgb(32, 30, 30);
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 0px 10px 2px -1px rgba(128,121,128,1);
+}
+
+@media only screen and (max-width: 500px) {
+    .calculadora {        
+        grid-template-columns: repeat(4, 75px); /*4 columnas de 75px*/       
+    }
+}
+
+button {
+    cursor: pointer;
+    margin: 7px;
+    padding: 0;
+    border-radius: 7px;
+    border: none;
+    font-size: 1.5em;    
+    background-color: rgb(58, 56, 56);    
+    box-shadow: 0px 10px 2px -1px rgba(128,121,128,1);    
+    transition: transform .0.5s;
+}
+
+button:active {
+    box-shadow: 0px 5px 2px -1px rgba(128,121,128,1);
+    transform: translateY(5px); 
+}
+
+button:focus {
+    outline: none;
+}
+
+.doble-col {
+    grid-column: span 2;    
+}
+
+.doble-row {
+    grid-row: span 2;
+}
+
+.pantalla {
+    grid-column: 1 / -1;
+    padding: 16px;
+    display: flex;
+    margin: 5px 5px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #b8bb8d;    
+    border-radius: 7px;
+    border: none;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all; /*como es el salto al completal una fila*/
+    box-shadow: inset 1px -1px 13px -1px rgba(0,0,0,1);    
+}
+
+#ingreso {
+    font-size: 1.5em;
+    color: #181717;
+}
+
+#resultado {
+    font-size: 2em;
+    color: #181717;
+}

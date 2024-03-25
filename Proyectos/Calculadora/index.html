@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link href="estilos.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <script src="Pantalla.js" type="text/javascript"></script>
+    <script src="Calculadora.js" type="text/javascript"></script>    
+</head>
+<body>
+    <div class="container">
+        <div class="calculadora">
+            <div class="pantalla">
+                <div id="resultado"></div>
+                <div id="ingreso"></div>
+            </div>
+            <button onclick="pantalla.borrarTodo()">C</button>
+            <button onclick="pantalla.borrar()">←</button> 
+            <button onclick="pantalla.computar('dividir')">/</button>
+            <button onclick="pantalla.computar('multiplicar')">*</button>
+            <button onclick="pantalla.agregarNumero(7)">7</button>
+            <button onclick="pantalla.agregarNumero(8)">8</button>
+            <button onclick="pantalla.agregarNumero(9)">9</button>
+            <button onclick="pantalla.computar('restar')">-</button>
+            <button onclick="pantalla.agregarNumero(4)">4</button>
+            <button onclick="pantalla.agregarNumero(5)">5</button>
+            <button onclick="pantalla.agregarNumero(6)">6</button>
+            <button onclick="pantalla.computar('sumar')">+</button>         
+            <button onclick="pantalla.agregarNumero(1)">1</button>
+            <button onclick="pantalla.agregarNumero(2)">2</button>
+            <button onclick="pantalla.agregarNumero(3)">3</button>
+            <button onclick="pantalla.computar('igual')" class="doble-row">=</button>
+            <button onclick="pantalla.agregarNumero(0)" class="doble-col">0</button>
+            <button onclick="pantalla.agregarNumero('.')">.</button>
+            
+        </div>
+    </div>
+
+    <script>
+        /*tomo todos los nodos del html de los cuales obtendre info con la que generar una respuesta*/
+        /*selecciono por id (unico por elemento)*/
+        const resultado = document.getElementById('resultado');
+        const ingreso = document.getElementById('ingreso');
+        const pantalla = new Pantalla(resultado, ingreso);
+    </script>
+</body>
+</html>
