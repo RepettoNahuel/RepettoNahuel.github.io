@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Ani-Movies</title>      
+      <link rel="stylesheet" href="styles.css">
+      <link rel="icon" type="image/x-icon" href="imagenes/icono.ico"> 
+      <!--Google fonts-->
+      <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+      <!--Fontawesome-->      
+      <script src="https://kit.fontawesome.com/7f156af93a.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+    <!--HEADER-->
+    <header class="header">
+      <nav class="barra-navegacion">
+        <a class="logo" href="#"><i class="fa-solid fa-film"></i> Ani-Movies</a>
+        <div class="contenedor-botones">
+          <a class="btn" href="#tendencias">Tendencias</a>
+          <a class="btn" href="registro.html">Registrarse</a>
+          <a class="btn" href="inicioDeSesion.html">Iniciar Sesión</a>
+        </div>
+      </nav>
+    </header>
+
+    <a href="#" class="ancla">
+      <img src="imagenes/flecha.png" class="img-flecha" alt="volver al inicio">
+    </a>
+       
+    <!--SECTION REGISTRO-->
+    <section class="sectionRegistro">
+      <div class="negro-transparente"></div>
+      <h1 class="titulo">Películas y series ilimitadas</h1>
+      <h1 class="titulo">en un solo lugar</h1>
+      <p class="texto">Disfruta donde quieras.</p>
+      <p class="texto">Cancela en cualquier momento.</p>
+      <a class="btn-registro achicar" href="registro.html">Registrate</a>
+    </section>
+          
+    <!--SECTION BUSCADOR-->
+    <section class="sectionBuscardor">
+      <h2 class="subtitulo">¿Qué estas buscando para ver?</h2>
+      <form class="buscador" onsubmit="return false;">
+        <input class="entrada" type="text" placeholder="Buscar...">
+        <input class="btn-buscador achicar" type="submit" value="Buscar">
+      </form>           
+    </section>
+        
+    <hr>
+          
+    <!--SECTION TENDENCIAS-->
+    <section class="sectionTendencias" id="tendencias">
+      <h2 class="subtitulo">Peliculas en tendencias</h2>
+       
+      <div class="contenedor-peliculas">           
+        <div class="pelicula">
+          <a href="descripcionPelicula.html">                                  
+            <img class="cartelera-peli" src="imagenes/p1.jpg" alt="Mi vecino Totoro" loading="lazy">        
+            <div class="nombre-pelicula">Mi vecino Totoro</div>   
+          </a>                   
+        </div>         
+                      
+        <div class="pelicula">
+          <a href="descripcionPelicula.html">
+            <img class="cartelera-peli" src="imagenes/p2.jpg" alt="El castillo ambulante" loading="lazy">
+            <div class="nombre-pelicula">El castillo ambulante</div>
+          </a>
+        </div>
+                    
+        <div class="pelicula">
+          <a href="descripcionPelicula.html">
+            <img class="cartelera-peli" src="imagenes/p3.jpg" alt="Una voz silenciosa" loading="lazy">
+            <div class="nombre-pelicula">Una voz silenciosa</div> 
+          </a>
+        </div>         
+                  
+        <div class="pelicula">
+          <a href="descripcionPelicula.html">                     
+            <img class="cartelera-peli" src="imagenes/p4.jpg" alt="Akira" loading="lazy">
+            <div class="nombre-pelicula">Akira</div>
+          </a>
+        </div>                            
+                              
+        <div class="pelicula">  
+          <a href="descripcionPelicula.html">                         
+            <img class="cartelera-peli" src="imagenes/p5.jpg" alt="Ghost in the Shell" loading="lazy">
+            <div class="nombre-pelicula">Ghost in the Shell</div>
+          </a>
+        </div>          
+          
+        <div class="pelicula">
+          <a href="descripcionPelicula.html">
+            <img class="cartelera-peli" src="imagenes/p6.jpg" alt="Amor de gata" loading="lazy">
+            <div class="nombre-pelicula">Amor de gata</div>
+          </a>
+        </div>     
+          
+        <div class="pelicula">
+          <a href="descripcionPelicula.html">
+            <img class="cartelera-peli" src="imagenes/p7.jpg" alt="Pokémon: ¡Te elijo a ti!" loading="lazy">
+            <div class="nombre-pelicula">Pokémon: ¡Te elijo a ti!</div>
+          </a>
+        </div>         
+                  
+        <div class="pelicula">
+          <a href="descripcionPelicula.html">
+            <img class="cartelera-peli" src="imagenes/p8.jpg" alt="a Chica Que Saltaba A Través Del Tiempo" loading="lazy">
+            <div class="nombre-pelicula">La Chica Que Saltaba A Través Del Tiempo</div>
+          </a>
+        </div>        
+                  
+        <div class="pelicula"> 
+          <a href="descripcionPelicula.html">
+            <img class="cartelera-peli" src="imagenes/p9.jpg" alt="El viaje de Chihiro" loading="lazy">
+            <div class="nombre-pelicula">El viaje de Chihiro</div>
+          </a>
+        </div>      
+          
+        <div class="pelicula">
+          <a href="descripcionPelicula.html">
+            <img class="cartelera-peli" src="imagenes/p10.jpg" alt="igimon Adventure: Last Evolution Kizuna" loading="lazy">
+            <div class="nombre-pelicula">Digimon Adventure: Last Evolution Kizuna</div>
+          </a> 
+        </div>
+      </div>
+        
+      <div class="contenedor-botones-paso">          
+        <span class="btnPaso">Anterior</span>  
+        <span class="btnPaso">Siguiente</span>
+      </div>        
+    </section>
+        
+    <hr>
+        
+    <!--SECTION SERIES-->
+    <section class="sectionSeries">
+      <h2 class="subtitulo">Top 10 series mas buscadas</h2>
+       
+      <div class="contenedor-series">          
+        <div class="serie">
+          <img class="cartelera-serie" src="imagenes/s1.jpg" alt="One Piece" loading="lazy">
+        </div>
+           
+        <div class="serie">
+          <img class="cartelera-serie" src="imagenes/s2.jpg" alt="Fullmetal Alchemist: Brotherhood" loading="lazy">
+        </div> 
+
+        <div class="serie">
+          <img class="cartelera-serie" src="imagenes/s3.jpg" alt="Ranma 1/2" loading="lazy">
+        </div>
+
+        <div class="serie">
+          <img class="cartelera-serie" src="imagenes/s4.jpg" alt="Slam Dunk" loading="lazy">
+        </div>
+
+        <div class="serie">
+          <img class="cartelera-serie" src="imagenes/s5.jpg" alt="Hunter × Hunter" loading="lazy">
+        </div>
+
+        <div class="serie">
+          <img class="cartelera-serie" src="imagenes/s6.jpg" alt="Haikyuu!!" loading="lazy">
+        </div>
+
+        <div class="serie">
+          <img class="cartelera-serie" src="imagenes/s7.jpg" alt="Death Note" loading="lazy">
+        </div>
+
+        <div class="serie">
+          <img class="cartelera-serie" src="imagenes/s8.jpg" alt="Shingeki no kyojin" loading="lazy">
+        </div>
+
+        <div class="serie">
+          <img class="cartelera-serie" src="imagenes/s9.jpg" alt="Boku no hero academia" loading="lazy">
+        </div>
+
+        <div class="serie">
+          <img class="cartelera-serie" src="imagenes/s10.jpg" alt="Kimetsu no Yaiba" loading="lazy">
+        </div>                                       
+      </div>
+    </section>
+
+    <!--FOOTER-->              
+    <footer class="footer">        
+      <div class="contenedor-botones vertical">
+        <a class="btn" href="">Términos y condiciones</a>
+        <a class="btn" href="">Preguntas frecuentes</a>
+        <a class="btn" href="">Ayuda</a>
+        <a class="btn" href="">Administrador Peliculas</a>
+      </div>          
+    </footer>      
+  </body>
+</html>
