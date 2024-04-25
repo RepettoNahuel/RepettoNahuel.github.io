@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <meta name="description" content="Portfolio" />    
+    <title>Nahuel Repetto</title>    
+    <link rel="icon" href="./img/rostro.png">         
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet"/>
+    <!--Iconos: fontawesome.com-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <!--AnimateOnScroll-->    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--MisEstilos-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">   
+        <div class="header-logo-container">
+          <div class="header-logo-img-cont">
+            <img src="./img/rostro.png" alt="Logo" class="header-logo-img"/>
+          </div>
+          <span class="header-logo-sub"><a href="#inicio">Nahuel Repetto</a></span>
+        </div>
+
+        <div class="header-main">
+          <ul class="header-links">                      
+            <li class="header-link-wrapper">
+              <a href="#about" class="header-link"> Conóceme </a>
+            </li>
+            <li class="header-link-wrapper">
+              <a href="#proyectos" class="header-link"> Proyectos </a>
+            </li>
+            <li class="header-link-wrapper">
+              <a href="#contacto" class="header-link"> Contacto </a>
+            </li>
+          </ul>          
+        </div>      
+    </header>
+    
+    <section id="inicio" class="conoceme">
+      <div class="conoceme-content">
+        <div data-aos="zoom-in"  data-aos-duration="1000">
+          <h1 class="titulo-principal">Bienvenidos !</h1>
+          <div class="home-hero__info">
+            <p class="texto-principal">
+              Mi nombre es Nahuel Repetto. Soy un desarrollador de 24 años, con residencia en Buenos Aires, Argentina. 
+              Actualmente, me encuentro cursando la carrera de Ingeniería en Informática y 
+              tengo especial interés en el ámbito del desarrollo web. 
+              </p>
+              <p class="texto-principal">
+              En mi tiempo libre, busco adquirir nuevos conocimientos que complementen 
+              mis habilidades, abordando asi nuevos proyectos y enriqueciendo mi experiencia.  
+            </p>
+          </div>  
+          <div class="cv-btn">
+            <a download="Curriculum" href="./arch/Repetto, Nahuel.pdf" class="btn btn--med btn--theme" >Descargar CV</a>
+          </div>  
+        </div>        
+      </div>   
+    </section>
+
+    <section id="about" class="about sec-pad">
+      <div class="main-container" data-aos="zoom-in"  data-aos-duration="1000" data-aos-offset="200">   
+        <div>
+          <h2 class="heading-sec heading-sec__mb-med">
+            <span class="heading-sec__main">¿Quién soy?</span>
+            <span class="heading-sec__sub">
+              Aquí encontrarás más información sobre mí, lo que hago y mis habilidades actuales 
+              principalmente en términos de programación y tecnología.
+            </span>
+          </h2> 
+        </div>            
+        <div class="about-content">
+          <div>
+            <h3 class="about-content-title">Sobre mi...</h3>
+            <div>
+              <p class="about-content-details-para">
+                Actualmente estoy cursando el cuarto año de la carrera de Ingeniería en Informática 
+                en la Universidad Nacional de la Matanza (UNLaM).
+              </p>
+              <p class="about-content-details-para">
+                Me caracteriza la proactividad, creatividad, responsabilidad y el compromiso, 
+                además, mis habilidades de comunicación interpersonal y resolución de problemas 
+                me permiten adaptarme al ambiente de trabajo, logrando desenvolverme tanto en 
+                forma autónoma como dentro de un equipo.
+              </p>  
+              <p class="about-content-details-para">
+                Estoy en busca de oportunidades laborales donde pueda contribuir, aprender y crecer. 
+                Si tienes una propuesta que coincida con mis habilidades, no dudes en contactarme.
+              </p>
+            </div>            
+            <div class="contact-btn">
+              <a href="#contacto" class="btn btn--med btn--theme">Contactarme</a>
+            </div> 
+          </div>
+          <div>
+            <h3 class="about-content-title">Mis habilidades...</h3>
+            <div class="skills">
+              <div class="skill">HTML</div>
+              <div class="skill">CSS</div>
+              <div class="skill">JavaScript</div>
+              <div class="skill">Bootstrap</div>
+              <div class="skill">React</div>
+              <div class="skill">Java</div>
+              <div class="skill">C/C++</div>
+              <div class="skill">Prolog</div>
+              <div class="skill">Bash</div>
+              <div class="skill">PowerShell</div>
+              <div class="skill">SQL</div>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="proyectos sec-pad">
+      <div class="main-container">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <h2 class="heading-sec heading-sec__mb-bg">
+            <span class="heading-sec__main">Proyectos</span>
+            <span class="heading-sec__sub">
+              Aquí encontrará algunos de mis proyectos personales, cada uno con una breve descripción y un enlace hacia los mismo.
+            </span>
+          </h2>
+        </div>       
+
+        <div class="projects__content">
+
+          <div class="projects__row">
+            <div class="projects__row-img-cont" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+              <a href="./Proyectos/Calculadora/index.html" target="_blank">
+                <img src="./img/p1.png" alt="Software Screenshot" class="projects__row-img" loading="lazy"/>
+              </a>
+            </div>
+            <div class="projects__row-content" data-aos="zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine">
+              <h3 class="projects__row-content-title">Calculadora</h3>
+              <p class="projects__row-content-desc">
+                Una calculadora web desarrollada utilizando HTML, CSS y JavaScript, para proporcionar 
+                funcionalidades básicas de cálculo. Esta calculadora es accesible a través 
+                de un navegador web y ofrece una interfaz intuitiva que permite a los usuarios realizar 
+                operaciones matemáticas simples con facilidad.
+              </p>
+              <a href="./Proyectos/Calculadora/index.html" class="btn btn--med btn--theme" target="_blank">Ver Proyecto</a>
+            </div>
+          </div>
+
+          <div class="projects__row">
+            <div class="projects__row-img-cont" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+              <a href="./Proyectos/Login/index.html" target="_blank">
+                <img src="./img/p4.png" alt="Software Screenshot" class="projects__row-img" loading="lazy"/>
+              </a>
+            </div>
+            <div class="projects__row-content" data-aos="zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine">
+              <h3 class="projects__row-content-title">Login</h3>
+              <p class="projects__row-content-desc">
+                Sistema web de autenticación y registro de usuarios implementado con HTML para la estructura de la página, 
+                CSS para el diseño, JavaScript para la interactividad en el cliente, y PHP para la interacción con la base de datos. 
+                La interfaz incluye campos para el nombre de usuario y la contraseña, así como botones de 
+                "Ingresar" y "Registrarse". Al hacer clic en uno de estos botones, el sistema verifica la existencia de los datos en la base de 
+                datos. Si los datos existen y se intenta iniciar sesión, se muestra un mensaje de "Ingreso Exitoso"; de lo contrario, se muestra 
+                una advertencia. Si se intenta registrar un usuario que ya existe, también aparecerá una advertencia; si no existe, 
+                se muestra un mensaje de "Registro Exitoso" y se redirige a la página de inicio de sesión. Puede probar con los usuarios “user1”, “user2” o “user3”, 
+                con la contraseña “1234”, o también puede crear uno nuevo. 
+              </p>
+              <a href="./Proyectos/Login/index.html" class="btn btn--med btn--theme" target="_blank">Ver Proyecto</a>
+            </div>
+          </div>
+
+          <div class="projects__row">
+            <div class="projects__row-img-cont" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+              <a href="./Proyectos/Tareas/index.html" target="_blank">
+                <img src="./img/p3.png" alt="Software Screenshot" class="projects__row-img" loading="lazy"/>
+              </a>  
+            </div>
+            <div class="projects__row-content" data-aos="zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine">
+              <h3 class="projects__row-content-title">Lista de Tareas</h3>
+              <p class="projects__row-content-desc">
+                Lista de tareas interactiva utilizando HTML, CSS y JavaScript. La aplicación permite agregar tareas a través 
+                de un campo de entrada y un botón, que luego se muestran en la lista. Cada tarea cuenta con opciones para marcarla 
+                como completada o eliminarla. Este proyecto muestra que se pueden lograr aplicaciones web dinámicas e interactivas 
+                utilizando tecnologías front-end comunes.
+                Además, para evitar que las tareas desaparezcan al refrescar la página o salir de esta, utilice conceptos básicos 
+                de PHP para conectar la lista de tareas con una base de datos que se actualiza al interactuar con esta.
+              </p>
+              <a href="./Proyectos/Tareas/index.html" class="btn btn--med btn--theme" target="_blank">Ver Proyecto</a>
+            </div>
+          </div> 
+
+          <div class="projects__row">
+            <div class="projects__row-img-cont" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+              <a href="./Proyectos/Juegos/index.html" target="_blank">
+                <img src="./img/p5.png" alt="Software Screenshot" class="projects__row-img" loading="lazy"/>
+              </a>  
+            </div>
+            <div class="projects__row-content" data-aos="zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine">
+              <h3 class="projects__row-content-title">Mini Juegos</h3>
+              <p class="projects__row-content-desc">
+                Desarrollé tres minijuegos: memoria, tateti y ahorcado. Estos juegos representaron mi primer acercamiento a la tecnología 
+                React, donde pude poner en práctica mis conocimientos y habilidades recién adquiridas. A través de estos proyectos, no solo 
+                aprendí a utilizar React, sino que también puse a prueba mi capacidad para adaptarme a una nueva tecnología y desarrollar aplicaciones interactivas.
+              </p>
+              <a href="./Proyectos/Juegos/index.html" class="btn btn--med btn--theme" target="_blank">Ver Proyecto</a>
+            </div>
+          </div>                                       
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact sec-pad">
+      <div class="main-container">           
+        <div class="contact-content" data-aos="fade-up" data-aos-duration="1000">
+          <div>                      
+            <h2 class="heading-sec heading-sec__mb-med">  
+              <span class="heading-sec__main heading-sec__main--lt">Contacto</span>              
+              <span class="heading-sec__sub heading-sec__sub--lt">
+                No dude en contactarme. A continuación le comparto
+                diferentes formar en las que puede comunicarse conmigo.                
+              </span>
+              <br><br><br>
+              <span class="heading-sec__sub heading-sec__sub--lt"><i class="fa fa-mobile"></i><a>1123344921</a></span>        
+              <br>    
+              <span class="heading-sec__sub heading-sec__sub--lt"><i class="fa fa-envelope"></i><a>repettonahuelbautista@gmail.com</a></span>
+              <br>
+              <span class="heading-sec__sub heading-sec__sub--lt"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/nahuel-repetto/" target="_blank">www.linkedin.com/in/nahuel-repetto</a></span>
+              <br>
+              <span class="heading-sec__sub heading-sec__sub--lt"><i class="fa fa-map-marked"></i><a>Buenos Aires, Argentina</a></span>
+            </h2>              
+          </div>
+
+          <div>
+            <div class="contact__form-container">
+              <form action="enviar-correo.php" method="POST">
+                
+                <div class="contact__form-field">             
+                  <label class="contact__form-label" for="name">Nombre</label>
+                  <input required placeholder="Ingrese su Nombre"
+                    type="text" class="contact__form-input" name="name" id="name"/>
+                </div>
+    
+                <div class="contact__form-field">
+                  <label class="contact__form-label" for="email">Email</label>
+                  <input required placeholder="Ingrese su Email"
+                    type="email" class="contact__form-input" name="email" id="email"/>
+                </div>
+    
+                <div class="contact__form-field">
+                  <label class="contact__form-label" for="asunto">Asunto</label>
+                  <input required class="contact__form-input" placeholder="Ingrese el asunto del Mensaje"
+                  type="text" name="asunto" id="asunto"/>              
+                </div>
+    
+                <div class="contact__form-field">
+                  <label class="contact__form-label" for="msg">Mensaje</label>
+                  <textarea required cols="30" rows="3" class="contact__form-input"
+                    placeholder="Ingrese su Mensaje" name="msg" id="msg"></textarea>
+                </div>
+                
+                <input type="submit" value="Enviar" class="btn btn--theme contact__btn" style="cursor: pointer;">
+    
+                <input type="hidden" name="_next" value="http://nahuelrepetto.lovestoblog.com/">
+    
+                <input type="hidden" name="_captcha" value="false">
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>  
+    <!--AnimateOnScroll js-->    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script> 
+  </body>
+</html>
