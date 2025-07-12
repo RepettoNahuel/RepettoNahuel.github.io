@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Salchimania</title>
+      <link rel="icon" href="imagenes/mini.png">
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="styles.css" type="text/css">
+      
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">  
+  </head>
+  <body>    
+      <header>
+        <nav id="nav">
+          <div class="titNav">         
+            <div class="barras-menu izq" id="barras-menu-izq">
+              <span id="linea1"></span>
+              <span id="linea2"></span>
+              <span id="linea3"></span>
+            </div>   
+    
+            <div class="contenedor-logo"><img src="imagenes/Logo.png" class="logo" alt="Logo"></div>
+                    
+            <div class="usuario der" id="barras-menu-der">          
+              <img src="imagenes/carrito.png" class="user-img" id="user-img" alt="icono-carrito">
+              <img src="imagenes/triangulo.png" class="triangulo-img" id="triangulo-img" alt="icono-flecha">
+            </div>        
+          </div>
+            
+          <ul class="barNav cerrado derecha" id="menu1">
+            <li class="primer-li"><span>🧾 Carrito 🧾</span></li>
+            <div id="carrito-container" class="carrito">
+              <div id="carrito-lista"></div>
+              <p id="carrito-total"></p>
+            </div>     
+            <li><a id="vaciar-carrito" class="btn-contacto centrar-btn">Vaciar Carrito</a></li>  
+            <li><a id="finalizar" class="btn-contacto centrar-btn">Finalizar Compra</a></li>    
+          </ul>
+    
+          <ul class="barNav cerrado izquierda" id="menu2">
+            <li class="primer-li">¿Que estas buscando?<span></span></li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#reseñas">Reseñas</a></li>
+            <li><a href="#contacto" class="btn-contacto centrar-btn">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+          
+      <section class="hero" id="inicio">
+        <div class="hero-text">
+          <h1>¡Encontrá todo lo que estas buscando!</h1>
+        </div>
+        <div class="hero-image">
+          <img src="imagenes/img1.jpg" alt="Perro en tienda" />
+        </div>
+      </section>
+
+      <section class="servicios" id="productos">
+        <h2>Nuestros productos</h2>
+        <div class="cards" id="tarjetas">          
+          <!-- AGREGAR PRODUCTOS DINAMICAMENTE -->          
+        </div>
+
+        <div class="paginacion">
+          <button id="anterior" class="btn-prodcutos margen-btn">Anterior</button>
+          <span id="pagina-actual">Página 1</span>
+          <button id="siguiente" class="btn-prodcutos margen-btn">Siguiente</button>
+        </div>
+      </section>
+
+      <section class="reseñas" id="reseñas">
+        <h2>Reseñas</h2>
+        <div class="reviews">
+          <div class="review">
+            <img src="imagenes/persona1.jpg" alt="Persona 1" class="review-img" />
+            <h4 class="review-name">Martina R.</h4>
+            ⭐⭐⭐⭐⭐<br />
+            <span>Muy bueno</span>
+          </div>
+          <div class="review">
+            <img src="imagenes/persona2.jpg" alt="Persona 2" class="review-img" />
+            <h4 class="review-name">Lucas G.</h4>
+            ⭐⭐⭐⭐☆<br />
+            <span>Recomendado</span>
+          </div>
+          <div class="review">
+            <img src="imagenes/persona3.jpg" alt="Persona 3" class="review-img" />
+            <h4 class="review-name">Ana P.</h4>
+            ⭐⭐⭐☆☆<br />
+            <span>Aceptable</span>
+          </div>
+          <div class="review">
+            <img src="imagenes/persona4.jpg" alt="Persona 4" class="review-img" />
+            <h4 class="review-name">Carlos L.</h4>
+            ⭐⭐⭐⭐⭐<br />
+            <span>Excelente</span>
+          </div>
+          <div class="review">
+            <img src="imagenes/persona5.jpg" alt="Persona 5" class="review-img" />
+            <h4 class="review-name">Laura v.</h4>
+            ⭐⭐⭐⭐☆<br />
+            <span>Recomendado!!!</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacto" id="contacto">
+        <h2>Contacto</h2>
+        <div class="formulario">
+
+          <form action="https://formspree.io/f/xanjwrpb" method="POST">
+            <input type="text" placeholder="Nombre" required />
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <textarea name="message" placeholder="Escribinos un mensaje..."></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+        
+        <div class="info">
+            <div class="redes-sociales">
+              <a href="#" onclick="return false;" taria-label="Facebook">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" />
+              </a>
+              <a href="#" onclick="return false;" taria-label="Instagram">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" />
+              </a>
+              <a href="#" onclick="return false;" taria-label="WhatsApp">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" />
+              </a>
+            </div>
+          </div>
+      </section>
+      
+      <!--Para el movimiento dinamico de los iconos de menus-->
+      <script src="barra.js"></script>  
+
+      <!--Para traer productos de forma dinamica y manejar el carrito-->
+      <script src="productos.js"></script>
+      
+      <footer>
+        <p>&copy; 2025 Salchimania</p>
+      </footer>
+          
+  </body>
+</html>
